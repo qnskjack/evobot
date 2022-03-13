@@ -1,6 +1,12 @@
-/**
- * Module Imports
- */
+const express = require('express')
+const app = express();
+const port = 25902
+
+app.get('/', (req, res) => res.send('your Bots is Online!!!'))
+app.listen(port, () =>
+
+console.log('your app is listening a http://localhost:${port}')
+);
 const { Client, Collection } = require("discord.js");
 const { readdirSync } = require("fs");
 const { join } = require("path");
